@@ -1,0 +1,28 @@
+mongo notes
+
+4th feb 2021
+
+install mongo community edition
+create a path -- ? "data/db" in root
+if you want to create  your own then start the mongodb as follows:
+
+-->>mongod --dbpath 'db directory path ex: /home/akash9920/dev/mongoDB/data'
+
+-->> show dbs (how current dbs list) 
+
+-->>use shop (create the db by name shop if not exist)
+
+-->>db.[collection name].insertOne({}) , name a  collection and enter the value, it the collection do not exist it will create the collection
+
+
+
+--->>> mongod --port 1234
+
+monogd to start mongo db and type mongo to connect
+
+how to update many or one:
+
+ db.products.updateMany({},{$set : {marker : "delete that marker"}})
+
+ do remember the syntax like set keyword might not be needed in the python
+ 
