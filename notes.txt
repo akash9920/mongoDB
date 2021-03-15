@@ -25,4 +25,36 @@ how to update many or one:
  db.products.updateMany({},{$set : {marker : "delete that marker"}})
 
  do remember the syntax like set keyword might not be needed in the python
- 
+
+ !!!!!insert many
+
+ db.[collectionName].insertMany([array of objects])
+
+ filter -->> gt  greater then.. see syntax
+
+ findOne will give you the first flight matched
+
+
+ -->> update vs updateMany
+
+ when using update it just update the value of the object with the new object instead of adding to the previous object
+ #replacement and override
+
+ find() gives first 20 elements
+
+ find().array() will give you all the elements
+
+ find().forEach(  lambda => {})
+
+PROJECTIONS
+ can use projection to filter the retreived data
+ find({},{bits 0/1 of key should be mentioned which we want})
+
+EMBEDDED Documents
+
+value of a field can be a document, basically its a nesting documenting. allowed 100 levels
+
+
+nested json is embedded docuemnt
+
+db.stats()
